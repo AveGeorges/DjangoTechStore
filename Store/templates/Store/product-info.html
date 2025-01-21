@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Product Info page</title>
+</head>
+<body>
+   Инфо о продукте №{{item.id}}:
+   <br>
+   {{item.name}} : {{item.price}} руб - {{item.description}}
+   <br>
+   <a href="{% url 'Store:items' %}">Назад к продуктам</a>
+   <br>
+   <a href="{% url 'Store:main' %}">На главную страницу</a>
+</body>
+</html>

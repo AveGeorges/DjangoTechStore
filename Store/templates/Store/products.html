@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Detail Product page</title>
+</head>
+<body>
+   <ol>
+      {% for item in items %}
+      
+      <li>
+         <a href="{% url 'Store:item' item.id %}">{{item.name}} : {{item.price}} руб - {{item.description}}</a>
+      </li>
+      {% endfor %}
+   </ol>
+   <br>
+
+   <a href="{% url 'Store:main' %}">На главную страницу</a>
+</body>
+</html>
