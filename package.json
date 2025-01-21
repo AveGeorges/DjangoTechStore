@@ -1,0 +1,26 @@
+{
+  "name": "djangotechstore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i Store/static/Store/src/tailwind.css -o Store/static/Store/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AveGeorges/DjangoTechStore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AveGeorges/DjangoTechStore/issues"
+  },
+  "homepage": "https://github.com/AveGeorges/DjangoTechStore#readme",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17"
+  }
+}
